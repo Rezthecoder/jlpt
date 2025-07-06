@@ -518,27 +518,28 @@ const jlptData = {
   },
   N4: {
     vocabulary: [
-      { q: "問題 1", a: "TBD" },
-      { q: "問題 2", a: "TBD" },
-      { q: "問題 3", a: "TBD" },
-      { q: "問題 4", a: "TBD" },
+      { q: "問題 1", a: "TBD", detail: "Details coming soon" },
+      { q: "問題 2", a: "TBD", detail: "Details coming soon" },
+      { q: "問題 3", a: "TBD", detail: "Details coming soon" },
+      { q: "問題 4", a: "TBD", detail: "Details coming soon" },
     ],
     grammar: [
-      { q: "問題 5", a: "TBD" },
-      { q: "問題 6", a: "TBD" },
-      { q: "問題 7", a: "TBD" },
+      { q: "問題 1", a: "1 2 3 4 5 6 7 8 9 10 11 12 13", detail: "Details coming soon" },
+      { q: "問題 2", a: "14 15 16 17", detail: "Details coming soon" },
+      { q: "問題 3", a: "18 19 20 21", detail: "Details coming soon" },
+      { q: "問題 4", a: "21 22 23 24", detail: "Details coming soon" },
+      { q: "問題 5", a: "25 26 27 28", detail: "Details coming soon" },
     ],
     reading: [
-      { q: "問題 8", a: "TBD" },
-      { q: "問題 9", a: "TBD" },
-      { q: "問題 10", a: "TBD" },
-      { q: "問題 11", a: "TBD" },
+      { q: "問題 4", a: "22 23 24", detail: "Details coming soon" },
+      { q: "問題 5", a: "25 26 27", detail: "Details coming soon" },
+      { q: "問題 6", a: "28 29", detail: "Details coming soon" },
     ],
     listening: [
-      { q: "問題 1", a: "TBD" },
-      { q: "問題 2", a: "TBD" },
-      { q: "問題 3", a: "TBD" },
-      { q: "問題 4", a: "TBD" },
+      { q: "問題 1", a: "1 2 3 4 5 6 7 8", detail: "Details coming soon" },
+      { q: "問題 2", a: "1 2 3 4 5 6 7", detail: "Details coming soon" },
+      { q: "問題 3", a: "1 2 3 4 5", detail: "Details coming soon" },
+      { q: "問題 4", a: "1 2 3 4 5 6 7 8", detail: "Details coming soon" },
     ],
   },
   N5: {
@@ -610,15 +611,14 @@ export default function Component() {
       <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-4 gap-2">
         <span className="font-bold text-lg sm:text-xl text-gray-800 dark:text-gray-200">{item.q}</span>
         <span
-          className={`font-mono text-xl sm:text-2xl font-bold ${
-            colorClass.includes("blue")
+          className={`font-mono text-xl sm:text-2xl font-bold ${colorClass.includes("blue")
               ? "text-blue-600 dark:text-blue-400"
               : colorClass.includes("green")
                 ? "text-green-600 dark:text-green-400"
                 : colorClass.includes("purple")
                   ? "text-purple-600 dark:text-purple-400"
                   : "text-orange-600 dark:text-orange-400"
-          }`}
+            }`}
         >
           {item.special ? (
             <>
