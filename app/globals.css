@@ -100,4 +100,5 @@ body {
 .v0-badge,
 [class*="v0-widget"] {
   display: none !important;
+
 }
