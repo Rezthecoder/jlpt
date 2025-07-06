@@ -1,30 +1,37 @@
-# jlpt
+# JLPT 日本語能力試験
 
-*Automatically synced with your [v0.dev](https://v0.dev) deployments*
+A comprehensive JLPT (Japanese Language Proficiency Test) answer key application with support for multiple languages.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/rezthecoders-projects/v0-recreate-this-result)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/5iaEq3yZaKJ)
+## Features
 
-## Overview
+- **Multi-level Support**: N1, N2, N3, N4, N5 levels
+- **Multi-language Interface**: English, Nepali, Myanmar, Vietnamese
+- **Comprehensive Content**: Vocabulary, Grammar, Reading, and Listening sections
+- **Responsive Design**: Works on desktop and mobile devices
+- **Dark/Light Theme**: Toggle between themes
 
-This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
+## Tech Stack
 
-## Deployment
+- **Framework**: Next.js 15
+- **Styling**: Tailwind CSS
+- **UI Components**: shadcn/ui
+- **Icons**: Lucide React
+- **Deployment**: Vercel
 
-Your project is live at:
+## Getting Started
 
-**[https://vercel.com/rezthecoders-projects/v0-recreate-this-result](https://vercel.com/rezthecoders-projects/v0-recreate-this-result)**
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Run the development server: `npm run dev`
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-## Build your app
+## Build for Production
 
-Continue building your app on:
+```bash
+npm run build
+npm start
+```
 
-**[https://v0.dev/chat/projects/5iaEq3yZaKJ](https://v0.dev/chat/projects/5iaEq3yZaKJ)**
+## License
 
-## How It Works
-
-1. Create and modify your project using [v0.dev](https://v0.dev)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+This project is for educational purposes only.
