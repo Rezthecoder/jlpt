@@ -4,7 +4,7 @@ import './globals.css'
 export const metadata: Metadata = {
   title: 'JLPT 日本語能力試験',
   description: 'Rez the coder',
-  generator: 'Rez the coder',
+  generator: 'Rez thecoder',
 }
 
 export default function RootLayout({
