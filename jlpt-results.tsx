@@ -685,6 +685,7 @@ export default function Component() {
         <StickyNavbar selectedLevel={selectedLevel} onLevelChange={setSelectedLevel} />
 
         {/* Header - Updated */}
+        {/* Header - Updated */}
         <div className="text-center space-y-6 relative pt-20">
           <div className="relative px-4">
             <div className="absolute inset-0 bg-gradient-to-r from-pink-600 to-purple-600 dark:from-pink-400 dark:to-purple-400 blur-3xl opacity-30 rounded-full"></div>
@@ -694,6 +695,33 @@ export default function Component() {
               <div className="text-sm sm:text-base md:text-lg opacity-80 mt-2">
                 {t(`level.${selectedLevel.toLowerCase()}` as any)}
               </div>
+
+              {/* ✅ Insert this block below */}
+              <div className="mt-6 flex justify-center">
+                <a
+                  href={`/pdfs/${selectedLevel}.pdf`}
+                  download
+                  className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-semibold rounded-lg shadow-md hover:scale-105 transition-transform duration-300"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M12 12v6m0 0l-3-3m3 3l3-3m-6-9h6a2 2 0 012 2v4H6V6a2 2 0 012-2h6z"
+                    />
+                  </svg>
+                  Download JLPT {selectedLevel} PDF
+                </a>
+              </div>
+              {/* ✅ End of button block */}
+
             </div>
           </div>
 
@@ -707,6 +735,7 @@ export default function Component() {
 
           <div className="w-24 h-1 bg-gradient-to-r from-pink-500 via-purple-500 to-orange-500 mx-auto rounded-full"></div>
         </div>
+
 
         {/* Stats Bar */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-4 mb-8 px-2">
